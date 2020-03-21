@@ -254,7 +254,8 @@ app.get("/about", function(req, res) {
 
 // app.listen(port);
 
-var server= app.listen(PORT,function(){
+var server= app.listen(process.env.PORT,function(){
 
-    
-     console.log("Listening on port: "+ PORT); })
+
+     console.log("Listening on port: "+ sever)
+    });
