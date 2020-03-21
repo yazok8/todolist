@@ -247,15 +247,7 @@ app.get("/about", function(req, res) {
     res.render("about");
 })
 
-// let port = process.env.PORT;
-// if (port == null || port == "") {
-//   port = 3000;
-// }
-
-// app.listen(port);
-
-var server= app.listen(process.env.PORT,function(){
-
-
-     console.log("Listening on port: "+ sever)
-    });
+var server = app.listen(process.env.PORT || 5000, function () {
+    var port = server.address().port;
+    console.log("Express is working on port " + port);
+  });
