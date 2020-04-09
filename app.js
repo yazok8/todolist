@@ -10,7 +10,7 @@ const _= require("lodash");
 
 //test?retryWrites=true&w=majority/
 
-mongoose.connect("mongodb+srv://admin-yaz_87:Yaz123@cluster0-kzi8e.mongodb.net/todolistDB", {
+mongoose.connect("mongodb://localhost:27017/blogDB", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
